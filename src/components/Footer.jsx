@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <footer className="max-w-[80rem] py-[2.25rem] px-10 mx-auto text-gry [font-size:14px] font-medium">
             <div className="w-full flex justify-between flex-wrap lg:flex-nowrap">
-                <div className="w-full lg:max-w-1/4 flex justify-start lg:justify-center my-4 lg:my-0">
+                <div className="w-full lg:max-w-1/4 lg:w-auto flex justify-start lg:justify-center my-4 lg:my-0">
                     <Link href={"https://dev-aria.com"}
                           className="text-[1.25rem] font-medium flex justify-center lg:justify-start w-full">
                         <span className="text-blck">DEV</span>
@@ -20,7 +20,7 @@ export default function Footer() {
                     </span>
                     </Link>
                 </div>
-                <ul className="w-full my-4 lg:my-0 lg:w-1/3 text-gry flex items-center justify-center lg:justify-between *:flex *:items-center *:h-full *:mx-4 *:text-sm *:font-medium *:flex-wrap ">
+                <ul className="w-full my-4 lg:my-0 lg:w-1/3 text-gry flex items-center justify-center lg:justify-between *:flex *:items-center *:h-full *:mx-1 *:md:mx-4 *:text-sm *:font-medium *:flex-wrap ">
                     <Link href={"/"} className="group">
                         <li className="duration-300 relative">
                             <div className="group-hover:text-black duration-300 block group-hover:-translate-y-1">HOME</div>
@@ -62,7 +62,7 @@ export default function Footer() {
                         </li>
                     </Link>
                 </ul>
-                <span className="w-full my-4 lg:my-0 justify-center lg:justify-end flex items-center lg:max-w-1/4">All Rights Reserved - {date}
+                <span className="w-full my-4 lg:my-0 lg:w-auto justify-center lg:justify-end flex items-center lg:max-w-1/4">All Rights Reserved - {date}
                     <sup>®</sup></span>
             </div>
         </footer>

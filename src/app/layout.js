@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {Inter} from 'next/font/google';
+import {Providers} from "@/app/provider";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -18,11 +19,13 @@ export default function RootLayout({children}) {
         <body
             className={`${inter.className} bg-smokeWhite text-blck`}
         >
-        <Header/>
-        <main className='text-blck max-w-[80rem] mx-auto px-6 md:px-10 pt-0'>
-            {children}
-        </main>
-        <Footer/>
+        <Providers>
+            <Header/>
+            <main className='text-blck max-w-[80rem] mx-auto px-6 md:px-10 pt-0'>
+                {children}
+            </main>
+            <Footer/>
+        </Providers>
         </body>
         </html>
     );

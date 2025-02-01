@@ -21,7 +21,7 @@ function AboutGrid1(props) {
             <h1 className="text-[3.5rem] font-inter text-gry text-center container font-[500]">I'm Aria<span
                 className="text-black">, a Front-end Developer <br></br>based</span> in Tehran<span
                 className="text-black">.</span></h1>
-            <h3 className="container px-40 text-gry text-center mt-16 text-[1.25rem] leading-[1.5]">
+            <h3 className="container lg:px-40 text-gry text-center mt-16 text-[1.25rem] leading-[1.5]">
                 Since starting my career as a front-end developer, I’ve built fast, responsive, and user-friendly web
                 applications, helping businesses create seamless digital experiences.
             </h3>

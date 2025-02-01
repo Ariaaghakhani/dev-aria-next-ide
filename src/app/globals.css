@@ -129,7 +129,6 @@ body {
     background-position: bottom left,top right;
     background-size: contain , contain;
 }
-
 .menu-hovered{
     position: relative;
     overflow: hidden;
@@ -155,4 +154,11 @@ body {
         height: 36px;
 
     }
+}
+
+.bg-contact{
+    background-image: url("../assets/images/contact-top.svg"), url("../assets/images/contact-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 400px, 400px;
 }

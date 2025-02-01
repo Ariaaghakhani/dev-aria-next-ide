@@ -4,7 +4,7 @@ import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 
 function AboutGrid5(props) {
     return (
-        <div className="col-span-3 row-span-2  px-6 py-8 flex flex-wrap font-medium [font-size:2.5rem] leading-[1.2] group content-start bg-about5 bg-no-repeat bg-cover bg-bottom">
+        <div className="col-span-8 lg:col-span-3 row-span-2  px-6 py-8 flex flex-wrap font-medium [font-size:2.5rem] leading-[1.2] group content-start bg-about5 bg-no-repeat bg-cover bg-bottom">
             <h2 className="text-blck w-full">
                 My<span className="text-gry ms-2">Experience</span>
             </h2>
