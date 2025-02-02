@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Minimal Dashboard",
+    "images": [],
+    "description": "description 1",
+    "technologies": ["NextJs","TailwindCSS","Axios","MUI"],
+    "link": "link 1",
+    "id": "1"
+  },
+  {
+    "name": "name 2",
+    "images": [],
+    "description": "description 2",
+    "technologies": ["VueJS","Bootstrap","Sortable.js","Axios","Java","Oracle"],
+    "link": "link 2",
+    "id": "2"
+  }
+]
