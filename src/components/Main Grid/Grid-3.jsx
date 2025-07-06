@@ -24,7 +24,7 @@ function Grid3(props) {
                         bringing designs to life through clean, efficient code.</h2>
                 </div>
                 <div className="w-full flex items-center justify-between">
-                    <h3 className='[font-size:0.75rem] font-semibold'>• ABOUT ME</h3>
+                    <h3 className='[font-size:0.7rem]'>• ABOUT ME</h3>
                     <HoveredButton hovered={hover}/>
                 </div>
             </div>

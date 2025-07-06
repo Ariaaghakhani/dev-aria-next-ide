@@ -11,7 +11,7 @@ import Grid8 from "@/components/Main Grid/Grid-8";
 function Main(props) {
     return (
         <div
-            className="grid grid-cols-8 grid-rows-6 gap-4 *:h-[22rem] *:lg:h-[45dvh] *:xl:h-[20rem] *:rounded-[2rem] *:bg-white">
+            className="grid grid-cols-8 grid-rows-6 gap-4 *:h-[22rem] *:lg:h-[45dvh] *:xl:h-[20rem] *:rounded-[2rem] *:bg-white *:transition-all *:duration-500 *:ease-in-out">
             <Grid1/>
             <Grid2/>
             <Grid3/>

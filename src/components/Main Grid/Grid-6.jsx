@@ -9,7 +9,7 @@ function Grid6(props) {
     }, [hover]);
     return (
         <Link href={'/project'}
-            className="flex flex-wrap content-between py-8 px-6 col-span-8 row-span-2 lg:col-span-2 bg-grid1 bg-right-bottom bg-no-repeat bg-contain  [font-size:2.5rem] leading-[1.2] group"  onMouseEnter={()=>{
+            className="flex flex-wrap content-between py-8 px-6 col-span-8 row-span-2 lg:col-span-2 bg-pattern3 bg-top bg-no-repeat bg-contain  [font-size:2.5rem] leading-[1.2] group"  onMouseEnter={()=>{
             setHover(true);
         }}
               onMouseLeave={()=>{

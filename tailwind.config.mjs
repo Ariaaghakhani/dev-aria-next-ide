@@ -21,8 +21,8 @@ export default {
       backgroundImage:{
         grid1:"url('../assets/images/grid1.svg')",
         pattern2:"url('../assets/images/pattern-02.svg')",
-        dashBg:"url('../assets/images/dash.png')",
-        taskBg:"url('../assets/images/task.png')",
+        vueBg:"url('../assets/images/vue.png')",
+        reactBg:"url('../assets/images/react.png')",
         pattern3:"url('../assets/images/pattern-06.svg')",
         pattern4:"url('../assets/images/pattern-09.svg')",
         pattern5:"url('../assets/images/pattern-10.svg')",
