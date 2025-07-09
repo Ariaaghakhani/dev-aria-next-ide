@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import HoveredButton from "@/components/HoveredButton";
 import Link from "next/link";
 
-function AboutGrid6(props) {
+function AboutGrid6(]) {
     const [hover, setHover] = useState(false);
     useEffect(() => {
 

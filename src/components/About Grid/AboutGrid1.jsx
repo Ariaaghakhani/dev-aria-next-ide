@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedinIn, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 
-function AboutGrid1(props) {
+function AboutGrid1() {
     return (
         <div
             className="col-span-8 row-span-5 bg-blck text-white flex pt-20 content-center justify-center flex-wrap py-8 px-6 bg-about">
