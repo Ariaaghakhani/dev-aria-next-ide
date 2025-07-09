@@ -18,7 +18,7 @@ function AboutGrid1(props) {
                        className="w-[220px] h-[220px] max-w-[220px] max-h-[220px] absolute scale-[1.25] rounded-full opacity-35 rotate-text saturate-50"
                        width="200" height="200"/>
             </div>
-            <h1 className="text-[3.5rem] font-inter text-gry text-center container font-[500]">I'm Aria<span
+            <h1 className="text-[3.5rem] font-inter text-gry text-center container font-[500]">I`m Aria<span
                 className="text-black">, a Front-end Developer <br></br>based</span> in Tehran<span
                 className="text-black">.</span></h1>
             <h3 className="container lg:px-40 text-gry text-center mt-16 text-[1.25rem] leading-[1.5]">

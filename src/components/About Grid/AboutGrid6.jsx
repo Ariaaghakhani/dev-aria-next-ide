@@ -17,7 +17,7 @@ function AboutGrid6(props) {
                  setHover(false);
              }}>
             <h2 className="text-blck w-full group-hover:text-gry duration-200">
-                Let's work
+                Let`s work
                 <span className="text-gry ms-2">together</span>
             </h2>
             <div className="w-full flex items-center justify-between">

@@ -1,13 +1,19 @@
 import VuePage from '@/components/VuePage'
 import ReactPage from '@/components/ReactPage'
 
+export async function generateStaticParams(){
+    return [{ slug: 'vue' }, { slug: 'react' }]
+
+}
+
 export default async function ProjectPage({ params }) {
-    const resolvedParams = await params
-    if (resolvedParams.slug === 'vue') {
+    if (params.slug === 'vue') {
         return <VuePage />
     }
-    if (resolvedParams.slug === 'react') {
+    if (params.slug === 'react') {
         return <ReactPage />
     }
 
+    return null // or a 404 fallback if needed
 }
+
