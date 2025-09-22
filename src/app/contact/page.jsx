@@ -5,7 +5,9 @@ import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faInstagram, faLinkedinIn, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
-import axios from "axios";
+
+import {db} from "@/firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 function Contact() {
     const [name, setName] = useState('');
@@ -13,36 +15,25 @@ function Contact() {
     const [subject, setSubject] = useState('');
     const [msg, setMsg] = useState('');
     const [buttonLoad, setButtonLoad] = useState(false);
-    let API_URL = 'https://66b4d9dd9f9169621ea49b31.mockapi.io/form'
 
-    function saveForm(name, email, subject, message) {
-        return axios({
-            method: 'POST',
-            url: `${API_URL}`,
-            data: {
-                name: name,
-                email: email,
-                subject: subject,
-                message: message
-            }
-        })
-    }
-
-    function submitForm(event) {
-        event.preventDefault()
+    async function submitForm(event) {
+        event.preventDefault();
         setButtonLoad(true);
-        saveForm(name, email, subject, msg)
-            .then(() => {
-                setButtonLoad(false)
-                setName('')
-                setEmail('')
-                setSubject('')
-                setMsg('')
-            })
-            .catch((err) => {
-                console.log(err)
-                setButtonLoad(false)
-            })
+       try {
+           await addDoc(collection(db, 'forms'),{
+               name,email,subject,message:msg,createdAt: new Date(),
+           });
+           setName("");
+           setEmail("");
+           setSubject("");
+           setMsg("");
+           alert("Message sent ✅");
+       } catch(err) {
+           console.log("Error !",err)
+           alert("Something went wrong ❌");
+       } finally {
+           setButtonLoad(false);
+       }
     }
 
     return (
