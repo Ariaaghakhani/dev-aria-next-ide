@@ -1,10 +1,7 @@
 'use client'
 import React, {useState} from 'react';
 import {Button, Input, Textarea} from "@heroui/react";
-import Link from "next/link";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faInstagram, faLinkedinIn, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
+import SocialLinks from "@/components/SocialLinks";
 
 import {db} from "@/firebase";
 import { collection, addDoc } from "firebase/firestore";
@@ -57,38 +54,7 @@ function Contact() {
         Let’s discuss how we can work together—drop me a message today!
       </h3>
       <div className="bg-contact container max-w-[50rem] p-20 bg-white mb-20 rounded-[2rem]">
-        <ul className="flex justify-center items-center *:me-4 mb-12">
-          <li className="menu-hovered">
-            <Link href={'https://github.com/Ariaaghakhani'}
-                  className="rounded-full w-9 h-9 flex justify-center items-center p-2.5 [border:1px_solid_#dee2e5]">
-              <FontAwesomeIcon icon={faGithub} className="text-gry max-w-[16px] max-h-[16px]"/>
-            </Link>
-          </li>
-          <li className="menu-hovered">
-            <Link href={'https://instagram.com/aria.agk'}
-                  className="rounded-full w-9 h-9 flex justify-center items-center p-2.5 [border:1px_solid_#dee2e5]">
-              <FontAwesomeIcon icon={faInstagram} className="text-gry max-w-[16px] max-h-[16px]"/>
-            </Link>
-          </li>
-          <li className="menu-hovered">
-            <Link href={'https://www.linkedin.com/in/aria-aghakhani/'}
-                  className="rounded-full w-9 h-9 flex justify-center items-center p-2.5 [border:1px_solid_#dee2e5]">
-              <FontAwesomeIcon icon={faLinkedinIn} className="text-gry max-w-[16px] max-h-[16px]"/>
-            </Link>
-          </li>
-          <li className="menu-hovered">
-            <Link href={'https://wa.me/+989121946210'}
-                  className="rounded-full w-9 h-9 flex justify-center items-center p-2.5 [border:1px_solid_#dee2e5]">
-              <FontAwesomeIcon icon={faWhatsapp} className="text-gry max-w-[16px] max-h-[16px]"/>
-            </Link>
-          </li>
-          <li className="menu-hovered">
-            <Link href={'mailto:contact@dev-aria.com'}
-                  className="rounded-full w-9 h-9 flex justify-center items-center p-2.5 [border:1px_solid_#dee2e5]">
-              <FontAwesomeIcon icon={faEnvelope} className="text-gry max-w-[16px] max-h-[16px]"/>
-            </Link>
-          </li>
-        </ul>
+        <SocialLinks className="justify-center mb-12" />
         <form onSubmit={submitForm}>
           <Input
             type={"text"}
