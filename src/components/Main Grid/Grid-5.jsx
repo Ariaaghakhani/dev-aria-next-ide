@@ -1,13 +1,10 @@
 'use client'
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Link from "next/link";
 import HoveredButtonDark from "@/components/HoveredButtonDark";
 
 function Grid4() {
     const [hover, setHover] = useState(false);
-    useEffect(() => {
-
-    }, [hover]);
     return (
         <Link href={'/project/vue'} className="col-span-8 lg:col-span-3 row-span-2 py-8 px-6 h-full flex content-between flex-wrap
         bg-vueBg bg-no-repeat bg-cover bg-center"

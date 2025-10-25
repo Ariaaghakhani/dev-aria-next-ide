@@ -9,8 +9,9 @@ function HoveredButton({hovered}) {
     }, [hovered]);
     return (
         <button
-            className={` text-gry border p-4 rounded-full w-16 h-10 flex justify-center items-center group-hover:bg-[#dee2e54d] overflow-hidden ${hover ? 'hovered-btn' : 'exited-btn'}` }>
-            <FontAwesomeIcon icon={faArrowRightLong} className={`w-[14px] ${hover ? 'animation-fade':''}`}/>
+            className={` text-gry border p-4 rounded-full w-16 h-10 flex justify-center items-center group-hover:bg-[#dee2e54d] overflow-hidden ${hover ? 'hovered-btn' : 'exited-btn'}` }
+            aria-label="View more">
+            <FontAwesomeIcon icon={faArrowRightLong} className={`w-[14px] ${hover ? 'animation-fade':''}`} aria-hidden="true"/>
         </button>
     );
 }

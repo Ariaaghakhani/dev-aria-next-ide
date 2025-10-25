@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import {Inter} from "next/font/google";
 
 import {Providers} from "@/app/provider";
+import {siteConfig} from "@/config/site";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -11,7 +12,48 @@ const inter = Inter({
 });
 
 export const metadata = {
-    title: "DEV Aria",
+    title: {
+        default: siteConfig.seo.title,
+        template: `%s | ${siteConfig.name}`
+    },
+    description: siteConfig.seo.description,
+    keywords: siteConfig.seo.keywords,
+    authors: [{ name: siteConfig.author }],
+    creator: siteConfig.author,
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://dev-aria.com',
+        title: siteConfig.seo.title,
+        description: siteConfig.seo.description,
+        siteName: siteConfig.name,
+        images: [
+            {
+                url: siteConfig.seo.ogImage,
+                width: 1200,
+                height: 630,
+                alt: siteConfig.name
+            }
+        ]
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: siteConfig.seo.title,
+        description: siteConfig.seo.description,
+        images: [siteConfig.seo.ogImage],
+        creator: '@aria_agk'
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
 };
 
 export default function RootLayout({children}) {
