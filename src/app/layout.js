@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import {Inter} from "next/font/google";
 
 import {Providers} from "@/app/provider";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 import {siteConfig} from "@/config/site";
 
 const inter = Inter({
@@ -68,6 +69,7 @@ export default function RootLayout({children}) {
                 {children}
             </main>
             <Footer/>
+            <SpeedInsights />
         </Providers>
         </body>
         </html>
