@@ -9,7 +9,7 @@ function AboutGrid7(props) {
 
     }, [hover]);
     return (
-        <Link href={'/contact'} className="col-span-8 lg:col-span-4 row-span-2 flex flex-wrap content-between py-8 px-6 font-medium [font-size:2.5rem] leading-[1.2] group bg-about7 bg-no-repeat bg-contain bg-right-top"
+        <Link href={'/services'} className="col-span-8 lg:col-span-4 row-span-2 flex flex-wrap content-between py-8 px-6 font-medium [font-size:2.5rem] leading-[1.2] group bg-about7 bg-no-repeat bg-contain bg-right-top"
               onMouseEnter={() => {
                   setHover(true);
               }}
