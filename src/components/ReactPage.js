@@ -81,7 +81,7 @@ function ReactPage() {
                                 manually tracking metrics, and lacking comprehensive insights into their performance.
                             </p>
                             <p className="text-gry leading-relaxed">
-                                We built a unified platform using React 18's concurrent features and modern state 
+                                We built a unified platform using React 18&#39;s concurrent features and modern state
                                 management patterns to deliver real-time analytics, automated reporting, and 
                                 competitor insights - helping teams save 20+ hours per week.
                             </p>
@@ -291,8 +291,8 @@ const { data, isLoading } = useAnalytics(
                         <div className="bg-blck text-white rounded-[2rem] p-8">
                             <div className="text-4xl mb-4">💬</div>
                             <p className="text-gry mb-4 leading-relaxed">
-                                "SocialPulse transformed how we manage our social media. The insights are invaluable 
-                                and the scheduler saved us 20+ hours per week."
+                                &#34;SocialPulse transformed how we manage our social media. The insights are invaluable
+                                and the scheduler saved us 20+ hours per week.&#34;
                             </p>
                             <div className="pt-4 border-t border-gray-800">
                                 <p className="font-semibold">Michael Chen</p>
