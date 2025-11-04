@@ -78,10 +78,10 @@ function VuePage() {
                             <h2 className="text-3xl font-bold text-blck mb-4">Project Overview</h2>
                             <p className="text-gry leading-relaxed mb-4">
                                 This project aimed to modernize the admin experience for a growing e-commerce platform. 
-                                The legacy system was slow, difficult to use, and couldn't scale with the business needs.
+                                The legacy system was slow, difficult to use, and couldn&#39;t scale with the business needs.
                             </p>
                             <p className="text-gry leading-relaxed">
-                                Using Vue 3's Composition API and modern development practices, we built a lightning-fast, 
+                                Using Vue 3&#39;s Composition API and modern development practices, we built a lightning-fast,
                                 intuitive dashboard that transformed how the team operates, resulting in a 50% improvement 
                                 in page load times and 40% increase in productivity.
                             </p>
@@ -221,8 +221,8 @@ export const useProductStore =
                         <div className="bg-blck text-white rounded-[2rem] p-8">
                             <div className="text-4xl mb-4">💬</div>
                             <p className="text-gry mb-4 leading-relaxed">
-                                "The new dashboard transformed our operations. What used to take hours now takes minutes. 
-                                The team delivered an exceptional product."
+                                &#34;The new dashboard transformed our operations. What used to take hours now takes minutes.
+                                The team delivered an exceptional product.&#34;
                             </p>
                             <div className="pt-4 border-t border-gray-800">
                                 <p className="font-semibold">Sarah Johnson</p>
