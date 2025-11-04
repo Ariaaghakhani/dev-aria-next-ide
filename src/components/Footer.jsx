@@ -45,7 +45,7 @@ export default function Footer() {
                                 className="text-black absolute -bottom-2 flex justify-center items-center [font-size:24px] w-full text-center opacity-0 invisible group-hover:visible group-hover:opacity-100 duration-300">.</span>
                         </li>
                     </Link>
-                    <Link href="/service" className="group">
+                    <Link href="/services" className="group">
                         <li className="duration-300 relative">
                             <div className="group-hover:text-black duration-300 block group-hover:-translate-y-1">SERVICE
                             </div>
