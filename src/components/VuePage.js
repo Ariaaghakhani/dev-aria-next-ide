@@ -276,7 +276,7 @@ function VuePage() {
                         {/* Testimonial */}
                         <div className="bg-blck text-white rounded-[2rem] p-8 bg-about3 bg-center bg-no-repeat bg-contain">
                             <p className="text-gry mb-4 leading-relaxed">
-                                "{projectData.testimonial.quote}"
+                                &#34;{projectData.testimonial.quote}&#34;
                             </p>
                             <div className="pt-4 border-t border-gray-800">
                                 <p className="font-semibold">{projectData.testimonial.author}</p>
