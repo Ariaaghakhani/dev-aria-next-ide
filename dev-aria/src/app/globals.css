@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+
+    .hovered-btn {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            background: #dee2e54d;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: anime .2s ease-in-out forwards;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+    }
+
+    .exited-btn {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 64px;
+            height: 64px;
+            background: #dee2e54d;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: exit .2s ease-in-out forwards;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+    }
+
+    .animation-fade {
+        animation: animeArrow 1s ease-in-out forwards;
+    }
+}
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1.25);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.25);
+    }
+}
+
+.rotate-text {
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite forwards;
+}
+
+
+@keyframes anime {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@keyframes exit {
+    0% {
+        width: 64px;
+        height: 64px;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes animeArrow {
+    0% {
+        transform: translate(0, 0);
+    }
+    40% {
+        transform: translate(70px, 0);
+    }
+    45% {
+        transform: translate(70px, 40px);
+    }
+    50% {
+        transform: translate(-70px, 40px);
+    }
+    55% {
+        transform: translate(-70px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.bg-about {
+    background-image: url("../assets/images/about-1-left.svg"),url("../assets/images/about-1-right.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left,top right;
+    background-size: contain , contain;
+}
+.menu-hovered{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        background: #dee2e54d;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        transition: .2s ease-in-out;
+        z-index: -1 ;
+    }
+    &:hover::before{
+        transition: .2s ease-in-out;
+        width: 36px;
+        height: 36px;
+
+    }
+}
+
+.bg-contact{
+    background-image: url("../assets/images/contact-top.svg"), url("../assets/images/contact-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 400px, 400px;
+}

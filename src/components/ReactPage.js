@@ -129,7 +129,7 @@ const { data, isLoading } = useAnalytics(
         { label: 'Bundle Size', value: '450KB', width: '75%', color: 'bg-purple-500' }
     ],
     testimonial: {
-        quote: 'SocialPulse transformed how we manage our social media. The insights are invaluable and the scheduler saved us 20+ hours per week.',
+        quote: '"SocialPulse transformed how we manage our social media. The insights are invaluable and the scheduler saved us 20+ hours per week."',
         author: 'Michael Chen',
         position: 'Social Media Director'
     },
@@ -152,7 +152,7 @@ function ReactPage() {
                     Back to Home
                 </Link>
 
-                <div className="bg-white rounded-[2rem] p-8 md:p-12 mb-8 bg-reactBg bg-right-bottom bg-no-repeat bg-contain">
+                <div className="bg-white rounded-[2rem] p-8 md:p-12 mb-8">
                     <div className="flex items-start justify-between mb-6">
                         <div className="flex-1">
                             <div className="flex items-center gap-3 mb-4">
@@ -340,7 +340,7 @@ function ReactPage() {
                         {/* Testimonial */}
                         <div className="bg-blck text-white rounded-[2rem] p-8 bg-about3 bg-center bg-no-repeat bg-contain">
                             <p className="text-gry mb-4 leading-relaxed">
-                                "{projectData.testimonial.quote}"
+                                {projectData.testimonial.quote}
                             </p>
                             <div className="pt-4 border-t border-gray-800">
                                 <p className="font-semibold">{projectData.testimonial.author}</p>
