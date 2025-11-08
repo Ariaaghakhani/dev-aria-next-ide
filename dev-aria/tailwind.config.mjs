@@ -31,7 +31,7 @@ export default {
         about3:"url('../assets/images/about-2.svg')",
         about4:"url('../assets/images/about-3.svg')",
         about5:"url('../assets/images/about-4.svg')",
-        about6:"url('../assets/images/about-7.svg')",
+        about6:"url('../assets/images/about-5.svg')",
         about7:"url('../assets/images/about-7.svg')",
       }
     },
