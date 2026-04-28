@@ -21,6 +21,9 @@ export const metadata = {
     keywords: siteConfig.seo.keywords,
     authors: [{ name: siteConfig.author }],
     creator: siteConfig.author,
+    verification:{
+      google: "dmnqpVA07OguphCIxKpOPHA9nc0vr01tCM1Jtc2dzaY"
+    },
     openGraph: {
         type: 'website',
         locale: 'en_US',
