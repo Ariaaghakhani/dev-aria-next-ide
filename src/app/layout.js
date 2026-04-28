@@ -20,10 +20,10 @@ export const metadata = {
     description: siteConfig.seo.description,
     keywords: siteConfig.seo.keywords,
     authors: [{ name: siteConfig.author }],
-    creator: siteConfig.author,
     verification:{
-      google: "dmnqpVA07OguphCIxKpOPHA9nc0vr01tCM1Jtc2dzaY"
+        google: "dmnqpVA07OguphCIxKpOPHA9nc0vr01tCM1Jtc2dzaY"
     },
+    creator: siteConfig.author,
     openGraph: {
         type: 'website',
         locale: 'en_US',
