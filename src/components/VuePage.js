@@ -130,7 +130,7 @@ function VuePage() {
                     Back to Home
                 </Link>
 
-                <div className="bg-white rounded-[2rem] p-8 md:p-12 mb-8 bg-vueBg bg-right-bottom bg-no-repeat bg-contain">
+                <div className="bg-white rounded-[2rem] p-8 md:p-12 mb-8">
                     <div className="flex items-start justify-between mb-6">
                         <div className="flex-1">
                             <div className="flex items-center gap-3 mb-4">
@@ -207,7 +207,7 @@ function VuePage() {
                         </div>
 
                         {/* Technical Highlights */}
-                        <div className="bg-white rounded-[2rem] p-8 bg-pattern4 bg-right-bottom bg-no-repeat bg-contain">
+                        <div className="bg-white rounded-[2rem] p-8 bg-about3 bg-right-bottom bg-no-repeat bg-contain">
                             <h2 className="text-3xl font-bold text-blck mb-6">Technical Highlights</h2>
 
                             <div className="space-y-6">
@@ -229,7 +229,7 @@ function VuePage() {
                         </div>
 
                         {/* Challenges */}
-                        <div className="bg-white rounded-[2rem] p-8 bg-pattern5 bg-left-bottom bg-no-repeat bg-contain">
+                        <div className="bg-white rounded-[2rem] p-8 bg-about6 bg-right-top bg-no-repeat bg-contain">
                             <h2 className="text-3xl font-bold text-blck mb-6">Challenges & Solutions</h2>
 
                             <div className="space-y-6">
@@ -274,7 +274,7 @@ function VuePage() {
                         </div>
 
                         {/* Testimonial */}
-                        <div className="bg-blck text-white rounded-[2rem] p-8 bg-about3 bg-center bg-no-repeat bg-contain">
+                        <div className="bg-blck text-white rounded-[2rem] p-8 bg-about3 bg-right bg-no-repeat bg-contain">
                             <p className="text-gry mb-4 leading-relaxed">
                                 &#34;{projectData.testimonial.quote}&#34;
                             </p>
